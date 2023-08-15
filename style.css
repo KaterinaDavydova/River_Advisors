@@ -1,0 +1,312 @@
+@font-face {
+    font-family: "Bw Gradual DEMO Regular";
+    src: local("Bw Gradual DEMO Regular"),
+        url("/fonts/BwGradualFont/BwGradualDEMO-Regular.otf") format("otf"),
+        url("/fonts/BwGradualFont/AnyConv.com__BwGradualDEMO-Regular.woff") format("woff");
+    font-weight: 400;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+/* ==========================================================================*/
+
+.wrapper {
+    width: 100%;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+.top__logo {
+    width: 80px;
+    height: 80px;
+    margin: 20px 50px auto 50px;
+}
+
+.top__items {
+    display: flex;
+    justify-content: center;
+    margin-right: 430px;
+    margin-left: 50px;
+    margin-top: 24px;
+}
+
+.top__items a {
+    color: #006166;
+    font-family: Bw Gradual DEMO;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    margin: 16px;
+    padding: 10px 15px;
+    width: 122px;
+    height: 41px;
+    flex-shrink: 0;
+    border-radius: 51px;
+    border: 1px solid #00EEDB;
+}
+
+.top__title {
+    color: #006166;
+    font-family: Bw Gradual DEMO;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    margin-top: 36px;
+}
+
+.main-conteiner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-conteiner__background {
+    width: 1335px;
+    height: 524px;
+    border-radius: 40px;
+
+}
+
+.main-conteiner__article {
+    position: absolute;
+    width: 885px;
+    color: #00EEDB;
+    font-family: Bw Gradual DEMO;
+    font-size: 78px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.78px;
+
+}
+
+.footer {
+    width: 1340px;
+    height: 533px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: #006166;
+    margin: 20px auto;
+}
+
+.footer__logo img {
+    margin: 70px auto 50px 50px;
+}
+
+.footer__content {
+    margin-left: 50px;
+}
+
+.footer__content span {}
+
+.footer__article {
+    width: 269px;
+    color: #FFF;
+    font-family: Bw Gradual DEMO;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.24px;
+}
+
+.footer__contact {
+    color: #FFF;
+    font-family: Bw Gradual DEMO;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.16px;
+}
+
+.footer__contact a {
+    color: #FFF;
+    font-family: Bw Gradual DEMO;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.3px;
+}
+
+.footer__title {
+    font-size: 200px;
+    color: #00EEDB;
+    font-family: Bw Gradual DEMO;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.78px;
+    margin-left: 50px;
+    padding-top: 50px;
+}
+
+
+@media (max-width: 425px) {
+    .top {}
+
+    .top__items {
+        display: none;
+    }
+
+    .top__logo {
+        margin-right: 125px;
+    }
+
+    .top__title {
+        font-size: 20px;
+    }
+
+    .main-conteiner__background {
+        width: 353px;
+        height: 288.214px;
+    }
+
+    .main-conteiner__article {
+        width: 322px;
+        font-family: Bw Gradual DEMO;
+        font-size: 37px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 42px;
+        letter-spacing: 0.37px;
+    }
+
+    .footer {
+        width: 350px;
+        height: 326px;
+        flex-shrink: 0;
+        border-radius: 30px;
+        background: #006166;
+    }
+
+    .footer__logo img {
+        width: 50px;
+        height: 50px;
+        margin: 20px 30px;
+    }
+
+    .footer__article {
+        width: 203px;
+        font-family: Bw Gradual DEMO;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.18px;
+    }
+
+    .footer__content {
+        margin: 20px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__content span {
+        margin-bottom: 30px;
+    }
+
+    .footer__contact a {
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.22px;
+    }
+
+    .footer__title {
+        font-size: 42px;
+        padding: 0;
+    }
+}
