@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- device-width -->
     <!-- ! Шрифти!  -->
 
     <link rel="stylesheet" href="fonts/Bw Gradual Font/AnyConv.com__BwGradualDEMO-Regular.woff">
@@ -19,32 +19,141 @@
     <div class="wrapper">
         <header>
             <div class="top">
-                <a class="top__logo"><img src="./img/logo.svg"></a>
+                <a href="#" class="top__logo"><img id="menu-btn" src="./img/logo.svg"></a>
+                <div class="burger-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <div class="top__items">
-                    <a href="#" title="SERVISES">SERVISES</a>
-                    <a href="#" title="ABOUT US">ABOUT US</a>
+                    <a href="#services" title="SERVISES">SERVISES</a>
+                    <a href="#about" title="ABOUT US">ABOUT US</a>
                     <a href="#contacts" title="CONTACTS">CONTACTS</a>
                 </div>
-                <h2 class="top__title">River Advisors</h2>
+                <img class="top__name" src="./img/topLogo.svg" alt="">
             </div>
         </header>
         <!--- main --->
         <section class="main">
             <div class="main-conteiner">
-                <img class="main-conteiner__background" src="/img/Rectangle.jpg" alt="">
-                <h1 class="main-conteiner__article">
-                    Investment Solutions <br>for a Dynamic World
-                </h1>
+                <div class="main__background">
+                    <img src="/img/Rectangle.jpg" alt="">
+                    <div class="main__article">
+                        <h1>
+                            Investment Solutions <br>for a Dynamic World
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- OUR SERVICES -->
+        <section class="services" id="services">
+            <div class="services__container">
+                <div class="services__info-block">
+                    <h2 class="services__title title">Our services</h2>
+                    <div class="services__items items">
+                        <div class="services__item">
+                            <span>1</span>
+                            <h2>Portfolio <br>management</h2>
+                        </div>
+                        <div class="services__item">
+                            <span>2</span>
+                            <h2>Risk <br>assessment</h2>
+                        </div>
+                        <div class="services__item">
+                            <span>3</span>
+                            <h2>Legal <br>services</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__subtitle">
+                    <p>We offer a wide range of services in investment advisory, including <br>
+                        portfolio management, risk assessment, legal services and other <br>
+                        investment solutions, to help our clients achieve their goals</p>
+                </div>
+            </div>
+        </section>
+        <!-- Our advantages -->
+        <section class="advantages">
+            <div class="advantages__container">
+                <div class="advantages__info-block">
+                    <h2 class="advantages__title title">Our advantages</h2>
+                    <p class="advantages__subtitle">We provide several advantages to our clients, such as the <br>
+                        expertise of our advisors, personalised approach to each client, <br>
+                        innovative investment strategies, legal support and a high level <br>
+                        of professionalism.</p>
+                </div>
+                <div class="advantages__img">
+                    <img src="/img/shutterstock_adv.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- ABOUT US -->
+        <section class="about" id="about">
+            <div class="about__container">
+                <div class="about__img">
+                    <img src="/img/Ellipse 20.jpg" alt="">
+                </div>
+                <div class="about__info-block">
+                    <h2 class="about__title title">About us</h2>
+                    <div class="about__items">
+                        <div class="about__item">
+                            <span>1</span>
+                            <h2>We are specialising in investment advisory<br>
+                                services providing one-stop-shop services.<br>
+                                Our primary objective is to empower our clients<br>
+                                to make informed decisions and achieve their <br>
+                                goals with confidence.
+                            </h2>
+                        </div>
+                        <div class="about__item">
+                            <span>2</span>
+                            <h2>Our team consists of experienced <br>
+                                advisors who possess deep knowledge <br>
+                                and professional skills in different industries. <br>
+                                We take pride in our expertise and strive <br>
+                                to deliver high-quality service.
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- OUR CLIENTS -->
+        <section class="clients">
+            <div class="clients__container">
+                <div class="clients__info-block">
+                    <h2 class="clients__title title">Our Clients</h2>
+                    <p class="clients__subtitle">We serve a wide range of clients, including private investors, <br>
+                        businesses, and organisations. Regardless of the size or type <br>
+                        of client, we are ready to offer tailored solutions that align <br>
+                        with their needs and goals.</p>
+                </div>
+                <div class="clients__btn-background">
+                    <img src="/img/Group 87.svg" alt="">
+                    <div class="btn">
+                        <a href="#">Drop us a line</a>
+                    </div>
+                </div>
             </div>
         </section>
         <!---- footer ----->
         <footer class="footer">
-            <a class="footer__logo"><img src="./img/logo.svg"></a>
-            <div class="footer__content">
-                <span class="footer__article">Investment Solutions <br>for a Dynamic World</span>
-                <span class="footer__contact" id="contacts">contact us <a href="mailto">info@rvradvisors.com</a></span>
+            <div class="footer__container">
+                <div class="footer__logo">
+                    <a><img src="./img/logo.svg"></a>
+                </div>
+                <div class="footer__info-block">
+                    <span class="footer__title title">Investment Solutions <br>for a Dynamic World</span>
+                    <div class="footer__contact" id="contacts">
+                        <p>contact us </p>
+                        <a href="mailto">info@rvradvisors.com</a>
+                    </div>
+                </div>
+                <div class="footer__name">
+                    <img src="/img/footerName.svg" alt="">
+                </div>
             </div>
-            <h1 class="footer__title">River Advisors</h1>
         </footer>
     </div>
 </body>
