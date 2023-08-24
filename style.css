@@ -94,6 +94,7 @@ h6 {
 .wrapper {
     width: 100%;
     padding: 0 50px;
+    overflow-x: hidden;
 }
 
 .top {
@@ -271,6 +272,10 @@ h6 {
     letter-spacing: 0.046px;
 }
 
+.advantages__img img {
+    width: 100%;
+}
+
 /*    ABOUT US    */
 
 .about__container {
@@ -318,6 +323,10 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.about__img img {
+    width: 100%;
 }
 
 /* -----OUR CLIENTS----- */
@@ -396,8 +405,8 @@ h6 {
 }
 
 /*----- footer -----*/
+
 .footer__container {
-    flex-shrink: 0;
     border-radius: 40px;
     background: #006166;
     padding: 50px;
@@ -462,10 +471,14 @@ h6 {
 
 @media (min-width: 320px) and (max-width: 769px) {
 
-    /* body {
-        overflow: hidden;
-        position: fixed;
-    } */
+    .top {
+        align-items: center;
+    }
+
+    .top__name {
+        width: 189px;
+        height: 22px;
+    }
 
     .top__items_menu {
         position: fixed;
@@ -475,7 +488,7 @@ h6 {
         height: 100%;
         padding: 15px;
         background: #00eedb;
-        transform: translateX(-100%);
+        transform: translateX(-150%);
         transition: transform 0.5s;
         z-index: 3;
     }
@@ -493,9 +506,13 @@ h6 {
     }
 
     .top__logo {
-        margin-right: 125px;
+        margin-right: 15px;
         z-index: 5;
-        position: sticky;
+    }
+
+    #menu-btn {
+        width: 50px;
+        height: 50px;
     }
 
     .top__title {
@@ -515,9 +532,8 @@ h6 {
         visibility: visible;
     }
 
-    .main-conteiner__background {
-        width: 353px;
-        height: 288.214px;
+    .main__background {
+        width: 100%;
     }
 
     .main-conteiner__article {
@@ -531,25 +547,80 @@ h6 {
     }
 
     .main__article h1 {
+        font-family: "Bw Gradual DEMO Regular";
         font-size: 37px;
+        font-style: normal;
         font-weight: 500;
         line-height: 42px;
         letter-spacing: 0.37px;
     }
 
-    .services__info-block {}
+    /* -----services------ */
+    .services__title {
+        font-family: "Bw Gradual DEMO Regular";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.32px;
+        text-transform: uppercase;
+    }
 
-    .services__title {}
+    .services__subtitle {
+        text-align: center;
+        font-family: "Bw Gradual DEMO Regular";
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+    }
 
     .services__items {
         grid-template-columns: 1fr;
     }
 
+    .services__items h2 {
+        font-size: 28px;
+        font-style: normal;
+        line-height: 29px;
+    }
+
+    .services__items span {
+        font-family: "Bw Gradual DEMO Regular";
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    /* -----advantages------ */
     .advantages__container {
         flex-direction: column-reverse;
         align-items: center;
     }
 
+    .advantages__title {
+        font-family: "Bw Gradual DEMO Regular";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.32px;
+        text-transform: uppercase;
+        margin: 30px 0;
+        text-align: center;
+    }
+
+    .advantages__subtitle {
+        color: #00EEDB;
+        font-family: "Bw Gradual DEMO Regular";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    /* -----about------ */
     .about__container {
         flex-direction: column;
     }
@@ -558,30 +629,60 @@ h6 {
         grid-template-columns: 1fr;
     }
 
+    .about__title {
+        font-family: "Bw Gradual DEMO Regular";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.32px;
+        text-transform: uppercase;
+    }
+
+    .about__item h2 {
+        font-family: "Bw Gradual DEMO Regular";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+    }
+
+    .about__item span {
+        font-family: "Bw Gradual DEMO Regular";
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    /* -----clients------ */
     .clients__container {
         flex-direction: column;
     }
 
-    .clients__btn-background {}
+    .clients__title {
+        font-family: "Bw Gradual DEMO Regular";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.32px;
+        text-transform: uppercase;
+    }
+
+    .clients__subtitle {
+        font-family: "Bw Gradual DEMO Regular";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+    }
 
     .clients__btn-background img {
         display: none;
     }
 
     .btn {
-        /* width: 265px;
-        height: 60px; */
-        color: #FFF;
-        font-family: Bw Gradual DEMO;
-        font-size: 22px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: 0.22px;
-    }
-
-
-    /* .btn a {
         color: #FFF;
         font-family: "Bw Gradual DEMO Regular";
         font-size: 22px;
@@ -589,8 +690,9 @@ h6 {
         font-weight: 700;
         line-height: normal;
         letter-spacing: 0.22px;
-    } */
+    }
 
+    /* -----footer------ */
     .footer {
         border-radius: 30px;
         background: #006166;
