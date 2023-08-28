@@ -4,11 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- device-width -->
-    <!-- ! Шрифти!  -->
-
-    <link rel="stylesheet" href="fonts/Bw Gradual Font/AnyConv.com__BwGradualDEMO-Regular.woff">
-
     <!-- ! Стилі ! -->
     <link rel="stylesheet" href="style.css">
 
@@ -19,20 +14,20 @@
     <div class="wrapper">
         <header>
             <div class="top">
-                <a href="#" class="top__logo"><img id="menu-btn" src="./img/logo.svg"></a>
+                <a href="#" class="top__logo"><img id="menu-btn" src="img/logo.svg" alt="logo"></a>
                 <div class="top__items top__items_menu">
                     <a href="#services" title="SERVISES">SERVISES</a>
                     <a href="#about" title="ABOUT US">ABOUT US</a>
                     <a href="#contacts" title="CONTACTS">CONTACTS</a>
                 </div>
-                <img class="top__name" src="./img/topLogo.svg" alt="">
+                <img class="top__name" src="img/topLogo.svg" alt="River advisors">
             </div>
         </header>
         <!--- main --->
         <section class="main">
             <div class="main-conteiner">
                 <div class="main__background">
-                    <img src="/img/Rectangle.jpg" alt="">
+                    <img src="img/Rectangle.jpg" alt="background">
                     <div class="main__article">
                         <h1>
                             Investment Solutions <br>for a Dynamic World
@@ -79,7 +74,7 @@
                         of professionalism.</p>
                 </div>
                 <div class="advantages__img">
-                    <img src="/img/shutterstock_adv.svg" alt="">
+                    <img src="img/shutterstock_adv.svg" alt="shutterstock">
                 </div>
             </div>
         </section>
@@ -87,7 +82,7 @@
         <section class="about" id="about">
             <div class="about__container">
                 <div class="about__img">
-                    <img src="/img/Ellipse 20.jpg" alt="">
+                    <img src="img/Ellipse 20.jpg" alt="ellipse">
                 </div>
                 <div class="about__info-block">
                     <h2 class="about__title title">About us</h2>
@@ -125,14 +120,83 @@
                         with their needs and goals.</p>
                 </div>
                 <div class="clients__btn-background">
-                    <img src="/img/Group 87.svg" alt="">
+                    <img src="img/Group 87.svg" alt="background picture">
                     <a class="btn" href="#">Drop us a line</a>
+                </div>
+                <div class="clients__block-form">
+                    <form name="user_form" class="clients__form" action="#">
+                        <img class="clients__close-form" src="img/icon_close.svg" alt="close">
+                        <h2>Пишіть нам по будь-яким питанням чи запросам або використовуйте наші контактні данні</h2>
+                        <div class="clients__form-registration">
+                            <label class="label-text">
+                                <p>Введіть ваш Email</p>
+                                <input name="inptEmail" id="email_inpt" value="riveradvisor@gmail.com" type="text">
+                            </label>
+                            <label class="label-text">
+                                <p>Введіть ваше ПІБ</p>
+                                <input name="inptName" id="name_inpt" value="Васильов Василій Василійович" type="text">
+                            </label>
+
+                            <label class="label-text">
+                                <p>Введіть свій номер телефону</p>
+                                <input name="inptTel" id="tel_inpt" value="0117446333" type="tel">
+                            </label>
+                            <label class="label-text">
+                                <p>Введіть вашу адресу</p>
+                                <input name="inptAdress" id="adress_inpt" value="Київ" type="text">
+                            </label>
+                        </div>
+                        <div class="clients__form-options">
+                            <div class="clients__form-radio">
+                                <p>Пiдписатися на розсилку новин?</p>
+                                <label>
+                                    <input name="inptRadio" checked type="radio" value="yes">
+                                    Так!
+                                </label>
+                                <br>
+                                <label>
+                                    <input name="inptRadio" type="radio" value="no">
+                                    Ні!
+                                </label>
+                            </div>
+                            <div>
+                                <select name="selectInpt" class="clients__form-select">
+                                    <option disabled selected>Мета запросу? Я звертаюсь...:</option>
+                                    <option value="'отримання послуг'">з метою отримання послуг.</option>
+                                    <option value="'співпраця'">з метою співпраці.</option>
+                                </select>
+                            </div>
+                            <div>
+                                <p>Оберіть зручний для вас спосіб спілкування:</p>
+                                <label>
+                                    <p>На Email адресу</p>
+                                    <input name="checkBoxInpt" type="checkbox">
+                                </label>
+                                <br>
+                                <label>
+                                    <p>За номером телефону</p>
+                                    <input name="checkBoxInpt_2" type="checkbox">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="clients__form-text">
+                            <p>Повідомлення</p>
+                            <label>
+                                <textarea name="textArea">Введіть текст...</textarea>
+                            </label>
+                        </div>
+                        <div class="clients__toSendBtn">
+                            <button id="click_toSend" type="submit">Отправити</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </section>
         <!---- footer ----->
         <footer class="footer">
             <div class="footer__container">
                 <div class="footer__logo">
-                    <a href="#top"><img src="./img/logo.svg"></a>
+                    <a href="#top"><img src="img/logo.svg" alt="logo"></a>
                 </div>
                 <div class="footer__info-block">
                     <span class="footer__title title">Investment Solutions <br>for a Dynamic World</span>
@@ -142,7 +206,7 @@
                     </div>
                 </div>
                 <div class="footer__name">
-                    <img src="/img/footerName.svg" alt="">
+                    <img src="img/footerName.svg" alt="River advisors">
                 </div>
             </div>
         </footer>
